@@ -1,0 +1,14 @@
+/Users/danielp/GitRepo/AlgorithmsLab/AlgorithmsLab.Examples/bin/Debug/net8.0/AlgorithmsLab.Examples
+/Users/danielp/GitRepo/AlgorithmsLab/AlgorithmsLab.Examples/bin/Debug/net8.0/AlgorithmsLab.Examples.deps.json
+/Users/danielp/GitRepo/AlgorithmsLab/AlgorithmsLab.Examples/bin/Debug/net8.0/AlgorithmsLab.Examples.runtimeconfig.json
+/Users/danielp/GitRepo/AlgorithmsLab/AlgorithmsLab.Examples/bin/Debug/net8.0/AlgorithmsLab.Examples.dll
+/Users/danielp/GitRepo/AlgorithmsLab/AlgorithmsLab.Examples/bin/Debug/net8.0/AlgorithmsLab.Examples.pdb
+/Users/danielp/GitRepo/AlgorithmsLab/AlgorithmsLab.Examples/obj/Debug/net8.0/AlgorithmsLab.Examples.GeneratedMSBuildEditorConfig.editorconfig
+/Users/danielp/GitRepo/AlgorithmsLab/AlgorithmsLab.Examples/obj/Debug/net8.0/AlgorithmsLab.Examples.AssemblyInfoInputs.cache
+/Users/danielp/GitRepo/AlgorithmsLab/AlgorithmsLab.Examples/obj/Debug/net8.0/AlgorithmsLab.Examples.AssemblyInfo.cs
+/Users/danielp/GitRepo/AlgorithmsLab/AlgorithmsLab.Examples/obj/Debug/net8.0/AlgorithmsLab.Examples.csproj.CoreCompileInputs.cache
+/Users/danielp/GitRepo/AlgorithmsLab/AlgorithmsLab.Examples/obj/Debug/net8.0/AlgorithmsLab.Examples.dll
+/Users/danielp/GitRepo/AlgorithmsLab/AlgorithmsLab.Examples/obj/Debug/net8.0/refint/AlgorithmsLab.Examples.dll
+/Users/danielp/GitRepo/AlgorithmsLab/AlgorithmsLab.Examples/obj/Debug/net8.0/AlgorithmsLab.Examples.pdb
+/Users/danielp/GitRepo/AlgorithmsLab/AlgorithmsLab.Examples/obj/Debug/net8.0/AlgorithmsLab.Examples.genruntimeconfig.cache
+/Users/danielp/GitRepo/AlgorithmsLab/AlgorithmsLab.Examples/obj/Debug/net8.0/ref/AlgorithmsLab.Examples.dll
