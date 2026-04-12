@@ -11,7 +11,10 @@ Console.WriteLine("");
 
 
 // Exercise: TwoSum
-int[] nums = [4,5,6];
+int[] nums = [4,5,7];
 int target = 10;
 int[] res = TwoSum.Solve(nums, target);
-Console.WriteLine($"The indices of the two numbers that add up to {target} are: [{res[0]}, {res[1]}]");
+if (res.Length != 0)
+    Console.WriteLine($"The indices of the two numbers that add up to {target} are: [{res[0]}, {res[1]}]");
+else
+    Console.WriteLine($"No two numbers add up to {target}.");
