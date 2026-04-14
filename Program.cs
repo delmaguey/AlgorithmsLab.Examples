@@ -11,10 +11,18 @@ Console.WriteLine("");
 
 
 // Exercise: TwoSum
-int[] nums = [4,5,7];
-int target = 10;
-int[] res = TwoSum.Solve(nums, target);
-if (res.Length != 0)
-    Console.WriteLine($"The indices of the two numbers that add up to {target} are: [{res[0]}, {res[1]}]");
-else
-    Console.WriteLine($"No two numbers add up to {target}.");
+// int[] nums = [4];
+// int target = 10;
+// int[] res = TwoSum.Solve(nums, target);
+// if (res.Length != 0)
+//     Console.WriteLine($"The indices of the two numbers that add up to {target} are: [{res[0]}, {res[1]}]");
+// else
+//     Console.WriteLine($"No two numbers add up to {target}.");
+
+
+// Exercise: IsAnagram
+string s = "racecar";
+string t = "carrace";
+
+bool res = IsAnagram.Solve(s, t);
+Console.WriteLine("Is Anagram: " + res.ToString());
