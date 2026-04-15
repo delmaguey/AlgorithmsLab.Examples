@@ -1,5 +1,6 @@
 ﻿using AlgoritmosLab.Arrays;
 using Arrays;
+using Sorting;
 
 Console.WriteLine("--- Executing Algorithms ---");
 
@@ -21,8 +22,15 @@ Console.WriteLine("");
 
 
 // Exercise: IsAnagram
-string s = "racecar";
-string t = "carrace";
+// string s = "racecar";
+// string t = "carrace";
 
-bool res = IsAnagram.Solve(s, t);
-Console.WriteLine("Is Anagram: " + res.ToString());
+// bool res = IsAnagram.Solve(s, t);
+// Console.WriteLine("Is Anagram: " + res.ToString());
+
+
+// Exercise: Quick Sort
+int[] arr = [64, 34, 25, 12, 22, 11, 90];
+Console.WriteLine("Unsorted array: " + string.Join(", ", arr));
+QuickSort.Sort(arr, 0, arr.Length - 1);
+Console.WriteLine("Sorted array:   " + string.Join(", ", arr));
