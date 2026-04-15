@@ -24,32 +24,24 @@ public static class IsAnagram {
 
 public static bool Solve(string s, string t) {
 
-    Dictionary<char, int> dict1 = new();
-    Dictionary<char, int> dict2 = new();
-
     if(s.Length != t.Length) return false;
 
-    // Iterate through both strings and count each character currences.
-    for(int i=0;i<s.Length;i++)
-    {
-        if(dict1.ContainsKey(s[i]))
-            dict1[s[i]]++;
-        else
-            dict1[s[i]] = 1;
-    
-        if(dict2.ContainsKey(t[i]))
-            dict2[t[i]]++;
-        else
-            dict2[t[i]] = 1;
+    // Allocate an array of 26 rooms to count ocurrences of each character.
+    int[] count = new int[26];
+
+    // Iterate through both strings and count ocurrences of each character.
+    for (int i = 0; i < s.Length; i++) {
+        count[s[i] - 'a']++;
+        count[t[i] - 'a']--;
     }
 
-    // Iterate through dictionaries to validate if they have the same number of characters. If not, return false.
-    foreach(var item in dict1)
-    {
-        if(!dict2.ContainsKey(item.Key))
+    // If the count of any character is not zero, then the strings are not anagrams.
+    foreach (int val in count) {
+        if (val != 0) {
             return false;
+        }
     }
-
+    
     return true;
 
     }
