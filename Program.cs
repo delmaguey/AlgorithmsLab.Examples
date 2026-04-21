@@ -30,7 +30,13 @@ Console.WriteLine("");
 
 
 // Exercise: Quick Sort
-int[] arr = [64, 34, 25, 12, 22, 11, 90];
-Console.WriteLine("Unsorted array: " + string.Join(", ", arr));
-QuickSort.Sort(arr, 0, arr.Length - 1);
-Console.WriteLine("Sorted array:   " + string.Join(", ", arr));
+// int[] arr = [64, 34, 25, 12, 22, 11, 90];
+// Console.WriteLine("Unsorted array: " + string.Join(", ", arr));
+// QuickSort.Sort(arr, 0, arr.Length - 1);
+// Console.WriteLine("Sorted array:   " + string.Join(", ", arr));
+
+
+// Exercise: Longest Substring Without Repeating Characters
+string s = "abcabcbb";
+int res = LongestSubstring.Solve(s);
+Console.WriteLine($"Length of the longest substring: {res}");
