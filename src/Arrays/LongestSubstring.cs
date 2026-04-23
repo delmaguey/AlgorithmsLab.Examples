@@ -27,24 +27,30 @@ public static class LongestSubstring
     {
         // Create hashset to store characters that don't repeat
         HashSet<char> tmp = new ();
-        int start =0;
-        int end = s.Length -1;
+        int left =0;
+        int right = 0;
+        int counter = 0;
 
         // Iterate through string until the end is reached
-        while (start < end)
+        while (right < s.Length)
         {
             // Verify if the current character is not in the hashset, if it is not, add it to the hashset and move the start pointer forward, if it is in the hashset, clear the hashset and start over
-            if (!tmp.Contains(s[start]))
+            if (!tmp.Contains(s[right]))
             {
-                tmp.Add(s[start]);
-                start++;
+                tmp.Add(s[right]);
+                counter = Math.Max(counter, tmp.Count);
+                right++;
             }
             else
             {
-                // Clear the hashset and start over
-                tmp.Clear();
+                while (tmp.Contains(s[right]))
+                {
+                    tmp.Remove(s[left]);
+                    left++;
+                }
             }
+        }
 
-        return 0;
+        return counter;
     }
 }
