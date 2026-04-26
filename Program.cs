@@ -38,6 +38,16 @@ Console.WriteLine("");
 
 // Exercise: Longest Substring Without Repeating Characters
 //string s = "abcabcbb";
-string s = "pwwkew";
-int res = LongestSubstring.Solve(s);
-Console.WriteLine($"Length of the longest substring: {res}");
+// string s = "pwwkew";
+// int res = LongestSubstring.Solve(s);
+// Console.WriteLine($"Length of the longest substring: {res}");
+
+
+// Exercise: Longest Repeating Character Replacement
+string s = "AABABBA";
+int k = 1;
+//  string s = "ABAB";
+//  int k = 2;
+int res = LongestRepeatingCharacter.Solve(s, k);
+Console.WriteLine($"Length of the longest substring after replacements: {res}");
+
