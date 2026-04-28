@@ -44,10 +44,10 @@ Console.WriteLine("");
 
 
 // Exercise: Longest Repeating Character Replacement
-string s = "AABABBA";
-int k = 1;
-//  string s = "ABAB";
-//  int k = 2;
+// string s = "AABABBA";
+// int k = 1;
+ string s = "ABAB";
+ int k = 2;
 int res = LongestRepeatingCharacter.Solve(s, k);
 Console.WriteLine($"Length of the longest substring after replacements: {res}");
 

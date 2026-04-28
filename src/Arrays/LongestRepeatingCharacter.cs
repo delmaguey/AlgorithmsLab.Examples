@@ -18,41 +18,32 @@ public static class LongestRepeatingCharacter
 {
     public static int Solve(string s, int k)
     {
-        int right = 0;
         int left = 0;
         int maxcount = 0;
         int result = 0;
         Dictionary<char, int> dict = new();
 
-        while(right < s.Length)
+        // Iterate through the string with a right pointer
+        for (int right = 0; right < s.Length; right++)
         {
-            // If character is in the dictionary
-            if(dict.ContainsKey(s[right]))
+            // If the character at the right pointer is not in the dictionary, add it with a value of 0
+            if (!dict.ContainsKey(s[right]))
+                dict[s[right]] = 0;
+    
+            // Move the right pointer and update the count of the character found
+            dict[s[right]]++;
+
+            // Update the maximum count of any character in the current window
+            maxcount = Math.Max(maxcount, dict[s[right]]);
+
+            // Verify if the current window size minus the count of the most frequent character is greater than k
+            if ((right - left + 1) - maxcount > k)
             {
-                // update maxcount, get the most frequent character in the current window
-                maxcount = Math.Max(maxcount, dict[s[right]]);
-
-                // Get the size of the current window
-                int windowSize = right - left + 1;
-
-                // If the number of characters that need to be replaced is greater than k, shrink the window from the left
-                if (windowSize - maxcount > k)
-                {
-                    // shrink window from the left
-                    dict[s[left]]--;
-                    left++;
-                }
-
-                dict[s[right]]++;
-                right++;
-
-            }
-            else
-            {
-                dict[s[right]] = 1;
-                right++;
+                dict[s[left]]--;
+                left++;
             }
 
+            // Update the result with the maximum length of the valid window found
             result = Math.Max(result, right - left + 1);
         }
 
