@@ -46,8 +46,22 @@ Console.WriteLine("");
 // Exercise: Longest Repeating Character Replacement
 // string s = "AABABBA";
 // int k = 1;
- string s = "ABAB";
- int k = 2;
-int res = LongestRepeatingCharacter.Solve(s, k);
-Console.WriteLine($"Length of the longest substring after replacements: {res}");
+//  string s = "ABAB";
+//  int k = 2;
+// int res = LongestRepeatingCharacter.Solve(s, k);
+// Console.WriteLine($"Length of the longest substring after replacements: {res}");
+
+// Exercise: Longest Palindromic Substring
+
+// Example 1:
+// Input: string s = "babad";
+// Output: "bab"
+// Explanation: "aba" is also a valid answer.
+
+// Example 2:
+// Input: s = "cbbd"
+// Output: "bb"
+string res = LongestPalindrome.Solve("babad");
+Console.WriteLine($"Longest palindromic substring: {res}");
+
 
