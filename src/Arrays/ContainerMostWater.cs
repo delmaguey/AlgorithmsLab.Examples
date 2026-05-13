@@ -12,12 +12,15 @@ public static class ContainerMostWater
         
         while(left<right)
         {
-            int maxLevel= Math.Min(height[left],height[right]);
+            int minLevel = Math.Min(height[left],height[right]);
             int size = right-left;
-            int volume = maxLevel*size;
+            int volume = minLevel*size;
 
             volumes.Add(volume);
-            left++;
+            if(height[left] < height[right])
+                left++;
+            else
+                right--;
         }
 
         return volumes.Max();

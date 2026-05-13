@@ -61,8 +61,8 @@ Console.WriteLine("");
 // Example 2:
 // Input: s = "cbbd"
 // Output: "bb"
-string res = LongestPalindrome.Solve("babad");
-Console.WriteLine($"Longest palindromic substring: {res}");
+// string res = LongestPalindrome.Solve("babad");
+// Console.WriteLine($"Longest palindromic substring: {res}");
 
 
 
@@ -74,7 +74,7 @@ Console.WriteLine($"Longest palindromic substring: {res}");
 // Input: height = [1,1]
 // Output: 1
 //int[] height = [1,8,6,2,5,4,8,3,7];
-// int[] height = [8,7,2,1];
-// int res = ContainerMostWater.Solve(height);
-// Console.WriteLine($"Solution: {res}");
+int[] height = [8,7,2,1];
+int res = ContainerMostWater.Solve(height);
+Console.WriteLine($"Solution: {res}");
 
