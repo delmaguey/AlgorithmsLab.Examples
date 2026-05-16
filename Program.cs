@@ -74,7 +74,21 @@ Console.WriteLine("");
 // Input: height = [1,1]
 // Output: 1
 //int[] height = [1,8,6,2,5,4,8,3,7];
-int[] height = [8,7,2,1];
-int res = ContainerMostWater.Solve(height);
-Console.WriteLine($"Solution: {res}");
+// int[] height = [8,7,2,1];
+// int res = ContainerMostWater.Solve(height);
+// Console.WriteLine($"Solution: {res}");
 
+
+
+//Excercise: Permutation in String
+// Example 1:
+// Input: s1 = "ab", s2 = "eidbaooo
+// Output: true
+// Explanation: s2 contains one permutation of s1 ("ba").
+// Example 2:
+// Input: s1 = "ab", s2 = "eidboaoo"
+// Output: false
+string s1 = "ab";
+string s2 = "eidboaoo";
+bool res = PermutationInString.Solve(s1,s2);
+Console.WriteLine($"Have permutation: {res}");
