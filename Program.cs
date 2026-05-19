@@ -89,6 +89,6 @@ Console.WriteLine("");
 // Input: s1 = "ab", s2 = "eidboaoo"
 // Output: false
 string s1 = "ab";
-string s2 = "eidboaoo";
+string s2 = "eidbaoo";
 bool res = PermutationInString.Solve(s1,s2);
 Console.WriteLine($"Have permutation: {res}");
