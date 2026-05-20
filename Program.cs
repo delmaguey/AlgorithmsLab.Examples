@@ -80,7 +80,7 @@ Console.WriteLine("");
 
 
 
-//Excercise: Permutation in String
+// Exercise: Permutation in String
 // Example 1:
 // Input: s1 = "ab", s2 = "eidbaooo
 // Output: true
@@ -88,7 +88,26 @@ Console.WriteLine("");
 // Example 2:
 // Input: s1 = "ab", s2 = "eidboaoo"
 // Output: false
-string s1 = "ab";
-string s2 = "eidbaoo";
-bool res = PermutationInString.Solve(s1,s2);
-Console.WriteLine($"Have permutation: {res}");
+// string s1 = "ab";
+// string s2 = "eidbaoo";
+// bool res = PermutationInString.Solve(s1,s2);
+// Console.WriteLine($"Have permutation: {res}");
+
+
+// Exercise: Palindromic Substrings
+// Example 1: 
+// Input: s = "abc"
+// Output: 3
+// Explanation: Three palindromic strings: "a", "b", "c".
+
+// Example 2:
+// Input: s = "aaa"
+// Output: 6
+// Explanation: Six palindromic strings: "a", "a", "a", "aa", "aa", "aaa".
+string s = "aaa";
+int res = PalindromicSubstrings.Solve(s);
+Console.WriteLine($"Number of palindromic substrings: {res}");
+
+
+
+
