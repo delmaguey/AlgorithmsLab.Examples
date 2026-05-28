@@ -6,35 +6,27 @@ namespace Arrays
     {
         public static int Solve(string s)
         {
-            StringBuilder tmp = new();
-            List<string> str = new();
+            int countCharacters = 0;
 
             for(int i=0; i<s.Length; i++)
             {
-                tmp.Append(s[i]);
-                if(IsPalindrome(tmp))
-                {
-                    str.Add(tmp.ToString());
-                }
+                countCharacters+= ExpandWindow(s, i, i); // Odd length palindromes
+                countCharacters+= ExpandWindow(s, i, i+1); // Even length palindromes
             }
 
-            return str.Count();
+            return countCharacters;
         }
 
-        private static bool IsPalindrome(StringBuilder tmp)
+        private static int ExpandWindow(string s, int left, int right)
         {
-            if(tmp.Length==1)
-                return true;
-            
-            int left = 0, right = tmp.Length - 1;
-            while (left < right)
+            int count = 0;
+            while (left >= 0 && right < s.Length && s[left] == s[right])
             {
-                if (tmp[left] != tmp[right]) return false;
-                left++;
-                right--;
+                count++;
+                left--;
+                right++;
             }
-            return true;
-
+            return count;
         }
     }
 }
